@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+	<class name="org.vny.Message" table="message_info">
+		<id name="msg_id" column="msg_id">
+			<generator class="assigned" />
+		</id>
+
+		<property name="message" column="message" />
+		<property name="fromUname" column="fromUname" />
+		<property name="toUname" column="toUname" />
+	</class>
+</hibernate-mapping>
